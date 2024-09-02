@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pain metla aqui vamos ot ra vez</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center mt-12">
+      <div class="flex max-w-fit">
+        <div>
+          <h1 class="text-zinc-50 text-4xl mx-auto">Painmetla2</h1>
+          <h1 class="text-zinc-50 text-4xl mx-auto" id="debug">debug</h1>
+          <div class="flex">
+            <canvas
+              id="canvas-ms"
+              width="720"
+              height="720"
+              class="bg-white mt-6"
+            >
+            </canvas>
+            <ul class="mt-6 ml-12 flex w-full overflow-hidden flex-col">
+              <li class="m-2">
+                <input
+                  type="radio"
+                  id="line"
+                  name="shape"
+                  value="line"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="line"
+                  class="p-2 w-24 h-10 flex items-center justify-center bg-white text-black peer-checked:text-zinc-100 peer-checked:bg-black peer-checked:border-solid peer-checked:border-2 peer-checked:border-pink-400"
+                >
+                  line
+                </label>
+              </li>
+              <li class="m-2">
+                <input
+                  type="radio"
+                  id="circle"
+                  name="shape"
+                  value="circle"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="circle"
+                  class="p-2 w-24 h-10 flex items-center justify-center bg-white text-black peer-checked:text-zinc-100 peer-checked:bg-black peer-checked:border-solid peer-checked:border-2 peer-checked:border-pink-400"
+                >
+                  circle
+                </label>
+              </li>
+              <li class="m-2">
+                <input
+                  type="radio"
+                  id="rectangle"
+                  name="shape"
+                  value="rectangle"
+                  class="hidden peer"
+                />
+                <label
+                  for="rectangle"
+                  class="p-2 w-24 h-10 flex items-center justify-center bg-white text-black peer-checked:text-zinc-100 peer-checked:bg-black peer-checked:border-solid peer-checked:border-2 peer-checked:border-pink-400"
+                >
+                  rectangle
+                </label>
+              </li>
+              <li class="m-2">
+                <input
+                  type="radio"
+                  id="matrix"
+                  name="shape"
+                  value="matrix"
+                  class="hidden peer"
+                  required
+                />
+                <label
+                  for="matrix"
+                  class="p-2 w-24 h-10 flex items-center justify-center bg-white text-black peer-checked:text-zinc-100 peer-checked:bg-black peer-checked:border-solid peer-checked:border-2 peer-checked:border-pink-400"
+                >
+                  matrix
+                </label>
+              </li>
+              <li>
+                <div id="fixed"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vanilla-picker@2"></script>
+    <script type="module" src="http://localhost:5173/src/main.ts"></script>
+  </body>
+</html>
